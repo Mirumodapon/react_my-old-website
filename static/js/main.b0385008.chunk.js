@@ -1,2 +1,0 @@
-(this["webpackJsonpmirumodapon.github.io"]=this["webpackJsonpmirumodapon.github.io"]||[]).push([[0],{10:function(n,o,e){"use strict";e.r(o);e(1);var t=e(3),i=e.n(t),c=(e(8),e(0));var r=function(){return Object(c.jsx)("h1",{className:"monospace",children:"Hello"})};i.a.render(Object(c.jsx)(r,{}),document.getElementById("root"))},8:function(n,o,e){}},[[10,1,2]]]);
-//# sourceMappingURL=main.b0385008.chunk.js.map
