@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../../assets/scss/public/hamburger.scss';
 
 function Hamburger(props) {
     const [active, setactive] = useState(false);
+    useEffect(() => {
+        props.callback(active);
+    },
+        // eslint-disable-next-line
+        []
+    );
     const handleClick = (e) => {
         const isActive = active;
         setactive(!isActive);
