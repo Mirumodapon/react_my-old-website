@@ -1,0 +1,6 @@
+@mixin cursor {
+    cursor: url('../../images/course/cursor.ico') 10 10, auto;
+}
+@mixin pointer {
+    cursor: url('../../images/course/cursor.ico') 10 10, pointer;
+}

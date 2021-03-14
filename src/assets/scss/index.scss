@@ -1,0 +1,11 @@
+@import './public/font.scss';
+@import './public/course.scss';
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    @include cursor;
+}
