@@ -4,11 +4,11 @@ import Hamburger from '../public/Hamburger';
 import '../../assets/scss/navbar.scss';
 
 function Navbar() {
-    const [isMobile, setMobile] = useState(false);
+    const [isMobile, setMobile] = useState(true);
     const [isActive, setActive] = useState(false);
     useLayoutEffect(() => {
         function updateSize() {
-            if (window.innerWidth < 600) setMobile(true);
+            if (window.innerWidth <= 600) setMobile(true);
             else setMobile(false);
         }
         window.addEventListener('resize', updateSize);
