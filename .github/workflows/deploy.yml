@@ -13,6 +13,7 @@ jobs:
         node-version: '12.x'
     - run: yarn install --frozen-lockfile
     - run: yarn build
+    - run: echo mirumo.org > build/CNAME
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
