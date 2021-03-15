@@ -4,6 +4,7 @@ import './assets/scss/index.scss';
 // components
 import Header from './components/layout/Header.jsx';
 import Home from './components/Home';
+import About from './components/About';
 
 function App() {
 	return (
@@ -11,7 +12,7 @@ function App() {
 			<Header></Header>
 			<Switch>
 				<Route path="/" component={Home} exact></Route>
-				<Route path="/tools">tool</Route>
+				<Route path="/about" component={About}></Route>
 			</Switch>
 		</Router>
 	);
