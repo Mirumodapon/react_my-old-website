@@ -1,7 +1,6 @@
 #navbar {
 	width: 50vw;
 	height: inherit;
-	background-color: white;
 	z-index: 10;
 	@media screen and (min-width: 600px) {
 		position: relative;
@@ -22,12 +21,13 @@
 		@media screen and (max-width: 600px) {
 			display: block;
 			width: 0;
-			height: calc(100vh - 72px);
+			height: calc(100vh - 73px);
 			position: fixed;
-			bottom: 0;
+			top: 72px;
 			right: 0;
 			transition: 0.5s width;
 			padding: 0;
+			border-top: 1px solid black;
 		}
 		&--item {
 			list-style: none;
