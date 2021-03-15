@@ -1,0 +1,37 @@
+#home {
+	width: 100vw;
+	height: calc(100vh - 72px);
+	margin: 0;
+	.home__center {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+		width: 400px;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		&--icon {
+			width: 180px;
+			height: 180px;
+			border: 1px solid black;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				position: relative;
+				width: 120%;
+				height: 120%;
+				right: 20px;
+				bottom: 10px;
+			}
+		}
+		h1 {
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+}

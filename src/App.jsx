@@ -5,17 +5,16 @@ import './assets/scss/index.scss';
 import Header from './components/layout/Header.jsx';
 import Home from './components/Home';
 
-
 function App() {
-    return (
-        <Router>
-            <Header></Header>
-            <Switch>
-                <Route path="/" component={Home}></Route>
-                <Route path="/tool">tool</Route>
-            </Switch>
-        </Router>
-    );
+	return (
+		<Router>
+			<Header></Header>
+			<Switch>
+				<Route path="/" component={Home} exact></Route>
+				<Route path="/tools">tool</Route>
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
