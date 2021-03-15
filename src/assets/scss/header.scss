@@ -1,22 +1,22 @@
 @import './public/font.scss';
 
 #header {
-    width: 100vw;
-    height: 72px;
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    .header__logo {
-        width: 200px;
-        height: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        &--text {
-            @include Logo;
-            font-size: 4.2rem;
-            text-align: center;
-        }
-    }
+	width: 100vw;
+	height: 72px;
+	border-bottom: 1.2px solid black;
+	display: flex;
+	flex-direction: row;
+	.header__logo {
+		width: 200px;
+		height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		&--text {
+			@include Logo;
+			font-size: 4.2rem;
+			text-align: center;
+		}
+	}
 }
