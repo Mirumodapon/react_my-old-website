@@ -1,21 +1,23 @@
 {
-  "name": "mirumodapon.github.io",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
+	"name": "mirumodapon.github.io",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"web-vitals": "^1.0.1"
+	},
+	"devDependencies": {
+		"node-sass": "^5.0.0",
+		"react-snap": "^1.23.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"postbuild": "react-snap"
+	}
 }
