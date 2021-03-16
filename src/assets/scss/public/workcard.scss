@@ -1,0 +1,47 @@
+.workcard {
+	width: 350px;
+	height: 250px;
+	border: 2px solid black;
+	margin: 20px 0;
+	padding: 10px;
+	position: relative;
+	* {
+		color: black;
+		text-decoration: none;
+	}
+	&__name {
+		font-size: 2rem;
+		text-align: center;
+	}
+	&__description {
+		font-size: 1.2rem;
+		text-indent: 25px;
+	}
+	&__homepage {
+		font-size: 1.2rem;
+		font-weight: bold;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display: block;
+		width: 90%;
+	}
+	&__info {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		* {
+			font-size: 1.6rem;
+			margin: 0 3px;
+		}
+	}
+	&__language {
+		font-size: 0.8rem;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+}

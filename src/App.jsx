@@ -5,6 +5,7 @@ import './assets/scss/index.scss';
 import Header from './components/layout/Header.jsx';
 import Home from './components/Home';
 import About from './components/About';
+import Work from './components/Work';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Switch>
 				<Route path="/" component={Home} exact></Route>
 				<Route path="/about" component={About}></Route>
+				<Route path="/works" component={Work}></Route>
 			</Switch>
 		</Router>
 	);
