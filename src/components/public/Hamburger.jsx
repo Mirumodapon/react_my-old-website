@@ -26,7 +26,7 @@ function Hamburger(props) {
 			className={`${props.className} __hamburger__`}
 			onClick={handleClick}
 		>
-			{props.active !== undefined ? (
+			{props.active === undefined ? (
 				<Fragment>
 					<div className={`item${active ? ' active' : ''}`}></div>
 					<div className={`item${active ? ' active' : ''}`}></div>
@@ -34,7 +34,6 @@ function Hamburger(props) {
 				</Fragment>
 			) : (
 				<Fragment>
-					(
 					<div
 						className={`item${props.active ? ' active' : ''}`}
 					></div>
@@ -44,7 +43,6 @@ function Hamburger(props) {
 					<div
 						className={`item${props.active ? ' active' : ''}`}
 					></div>
-					)
 				</Fragment>
 			)}
 		</button>
