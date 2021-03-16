@@ -1,0 +1,11 @@
+#works {
+	width: 100vw;
+	padding: 20px 0;
+	.works {
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+}
