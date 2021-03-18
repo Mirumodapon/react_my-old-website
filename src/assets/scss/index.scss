@@ -10,3 +10,7 @@ body {
     @include monospace;
     @include cursor;
 }
+
+a {
+    @include pointer;
+}
