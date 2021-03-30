@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.16096359.chunk.css",
-    "main.js": "/static/js/main.aada5e61.chunk.js",
-    "main.js.map": "/static/js/main.aada5e61.chunk.js.map",
+    "main.css": "/static/css/main.d887f4df.chunk.css",
+    "main.js": "/static/js/main.d9e33810.chunk.js",
+    "main.js.map": "/static/js/main.d9e33810.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0a5a03a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.0a5a03a6.js.map",
     "static/js/2.a9bbf438.chunk.js": "/static/js/2.a9bbf438.chunk.js",
     "static/js/2.a9bbf438.chunk.js.map": "/static/js/2.a9bbf438.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.16096359.chunk.css.map": "/static/css/main.16096359.chunk.css.map",
+    "static/css/main.d887f4df.chunk.css.map": "/static/css/main.d887f4df.chunk.css.map",
     "static/js/2.a9bbf438.chunk.js.LICENSE.txt": "/static/js/2.a9bbf438.chunk.js.LICENSE.txt",
     "static/media/header.scss": "/static/media/AkayaTelivigala-Regular.ce37233a.ttf",
     "static/media/Icon.af44acbc.jpg": "/static/media/Icon.af44acbc.jpg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.0a5a03a6.js",
     "static/js/2.a9bbf438.chunk.js",
-    "static/css/main.16096359.chunk.css",
-    "static/js/main.aada5e61.chunk.js"
+    "static/css/main.d887f4df.chunk.css",
+    "static/js/main.d9e33810.chunk.js"
   ]
 }
