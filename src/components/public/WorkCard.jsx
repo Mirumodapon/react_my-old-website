@@ -13,13 +13,13 @@ function WorkCard(props) {
 				<a href={work.homepage}>{work.homepage}</a>
 			</span>
 			<div className="workcard__info">
-				<div className="workcard__info--issue">
+				<div className="workcard__info--issue" title="issue">
 					<Issue /> {work.open_issues}
 				</div>
-				<div className="workcard__info--fork">
+				<div className="workcard__info--fork" title="fork">
 					<Fork /> {work.forks_count}
 				</div>
-				<div className="workcard__info--star">
+				<div className="workcard__info--star" title="star">
 					<Star /> {work.stargazers_count}
 				</div>
 			</div>
