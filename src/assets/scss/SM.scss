@@ -1,0 +1,30 @@
+#textarea {
+	width: 100vw;
+	height: calc(100vh - 72px);
+	border: none;
+	resize: none;
+	outline: none;
+	// position: absolute;
+	// top: 0px;
+	// left: 0px;
+	//z-index: 999;
+	white-space: nowrap;
+	font-family: sans;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+#test {
+	position: absolute;
+	visibility: hidden;
+	top: 0px;
+	left: 0px;
+	font-size: 30px;
+	white-space: pre;
+	font-family: sans;
+	border: 0px;
+	padding: 0.1em;
+	margin: 0px;
+}
