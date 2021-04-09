@@ -2,6 +2,10 @@
     font-family: Akaya;
     src: url('../../font/AkayaTelivigala-Regular.ttf');
 }
+@font-face {
+    font-family: Sans;
+    src: url('../../font/SourceSansPro-Regular.ttf');
+}
 @mixin monospace {
     font-family: monospace;
 }
