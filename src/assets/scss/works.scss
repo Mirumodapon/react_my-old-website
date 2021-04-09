@@ -1,11 +1,13 @@
 #works {
 	width: 100vw;
-	padding: 20px 0;
+	//padding: 20px 0;
 	.works {
-		width: 100vw;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: flex-start;
+		max-width: 100vw;
+		padding: 50px;
+		margin: auto;
+		columns: auto;
+		column-width: 300px;
+		column-count: 5;
+		column-gap: 100px;
 	}
 }
