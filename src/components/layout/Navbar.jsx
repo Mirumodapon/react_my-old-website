@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Hamburger from '../public/Hamburger';
 import '../../assets/scss/navbar.scss';
 
@@ -18,24 +19,7 @@ function Navbar() {
 	const isVisible = () => !(isMobile && !isActive);
 	const handleHamburger = (e) => setActive(e);
 	const handleNavItem = (e) => setActive(false);
-	const navItems = [
-		{
-			label: 'Home',
-			url: '/'
-		},
-		{
-			label: 'About',
-			url: '/about'
-		},
-		{
-			label: 'Works',
-			url: '/works'
-		},
-		{
-			label: 'Tools',
-			url: '/tools'
-		}
-	];
+	const navItems = useSelector((state) => state.Navbar.options);
 	return (
 		<nav id="navbar">
 			<Hamburger

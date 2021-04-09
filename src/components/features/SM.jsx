@@ -1,17 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 import useQuery from '../../hook/useQuery';
-
+import { useDispatch } from 'react-redux';
+import { addOption, initOption } from '../../store/reduxer/Navbar';
 import '../../assets/scss/SM.scss';
 
-function SM({ navbar }) {
+function SM() {
+	// hooks
 	const query = useQuery().get('t');
 	const test = useRef(null);
 	const [text, setText] = useState(query ? query : 'mirumo');
 	const [areaStyle, setStyle] = useState({});
+	const dispatch = useDispatch();
+	// init
 	const textareaWidth = window.innerWidth;
 	const textareaHeight = window.innerHeight - 72;
 	var ratioX, ratioY, ratio, fontSize;
 	var newHeight, newWidth;
+	// event
 	function handleChange() {
 		const { offsetHeight, offsetWidth } = test.current;
 		// console.log(text);
@@ -25,14 +30,11 @@ function SM({ navbar }) {
 
 		setStyle({
 			paddingTop: Math.floor((textareaHeight - newHeight) / 2) + 'px',
-			paddingBottom:
-				Math.floor((textareaHeight - newHeight) / 2) + 'px',
+			paddingBottom: Math.floor((textareaHeight - newHeight) / 2) + 'px',
 			paddingLeft:
-				Math.max(0, Math.floor((textareaWidth - newWidth) / 2)) +
-				'px',
+				Math.max(0, Math.floor((textareaWidth - newWidth) / 2)) + 'px',
 			paddingRight:
-				Math.max(0, Math.floor((textareaWidth - newWidth) / 2)) +
-				'px',
+				Math.max(0, Math.floor((textareaWidth - newWidth) / 2)) + 'px',
 			width: newWidth + 'px',
 			height: newHeight + 'px',
 			top: Math.floor((textareaHeight - newHeight) / 2) + 'px',
@@ -45,6 +47,13 @@ function SM({ navbar }) {
 		handleChange();
 		// eslint-disable-next-line
 	}, [query, text]);
+	useEffect(() => {
+		dispatch(addOption({ url: '#setting', label: 'Setting' }));
+		return () => {
+			dispatch(initOption());
+		};
+		// eslint-disable-next-line
+	}, []);
 	return (
 		<div>
 			<span id="test" ref={test}>
