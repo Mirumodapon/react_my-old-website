@@ -12,8 +12,8 @@ function SM() {
 	const [areaStyle, setStyle] = useState({});
 	const [setting, setSetting] = useState(false);
 	// init
-	const textareaWidth = window.innerWidth;
-	const textareaHeight = window.innerHeight - 72;
+	const textareaWidth = window.innerWidth - 5;
+	const textareaHeight = window.innerHeight - 75;
 	var ratioX, ratioY, ratio, fontSize;
 	var newHeight, newWidth;
 	// event
