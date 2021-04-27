@@ -1,6 +1,8 @@
 .qrScanner {
     width: 75vw;
     height: 75vw;
+    max-width: 70vh;
+    max-height: 70vh;
     margin: 30px auto;
 }
 .qrResult {
