@@ -4,7 +4,6 @@ import '../assets/scss/works.scss';
 function Work() {
 	const [works, setWorks] = useState([]);
 	useEffect(() => {
-		console.log(0);
 		fetch('https://api.github.com/users/Mirumodapon/repos')
 			.then((e) => e.json())
 			.then((response) => {
