@@ -90,7 +90,7 @@ function SM() {
 					onLoad={handleChange}
 				></textarea>
 			</div>
-			<Popup class="sm-setting" id="sm-setting" close={closeSetting} active={setting}>
+			<Popup className="sm-setting" id="sm-setting" close={closeSetting} active={setting}>
 				<div className="sm-setting">
 					Font Family: <input type="text" onChange={setFontFamily} />
 							Color: <input type="text" onChange={setColor} />
