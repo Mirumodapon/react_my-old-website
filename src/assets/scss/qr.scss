@@ -24,6 +24,9 @@
     margin: auto;
     resize: none;
     font-size: 2rem;
+    @media screen and (max-width: 500px) {
+        width: 80vw;
+    }
 }
 .qr-mode-btn {
     position: fixed;

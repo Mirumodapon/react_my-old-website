@@ -7,7 +7,7 @@ import Popup from '../../public/Popup';
 function QrGenerate() {
     const [value, setValue] = useState('https://mirumo.org');
     const [isPopup, setPopup] = useState(false);
-    const [{ inputValue, qrSize }, setQrSize] = useState({ inputValue: 0, qrSize: 30 });
+    const [{ inputValue, qrSize }, setQrSize] = useState({ inputValue: 10, qrSize: 80 });
     const handleChange = (e) => {
         setValue(e.target.value);
     }
