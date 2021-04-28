@@ -1,7 +1,6 @@
-import { Fragment, useState } from 'react';
+import { useState, Fragment } from 'react';
 import QrReader from 'react-qr-reader';
 
-import '../../assets/scss/qrScanner.scss';
 
 function QrScanner() {
     const [delay] = useState(1000);
