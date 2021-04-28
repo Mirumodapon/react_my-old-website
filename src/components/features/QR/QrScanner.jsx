@@ -27,7 +27,7 @@ function QrScanner() {
             <p className="qrResult">
                 {data}
                 <br />
-                {isLink && <a href={data} target="_blank" rel="noreferrer">Go to Link</a>}
+                {isLink && <a href={data}>Go to Link</a>}
             </p>
         </Fragment>
     )
