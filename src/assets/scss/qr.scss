@@ -1,112 +1,112 @@
 .qrScanner {
-    width: 75vw;
-    height: 75vw;
-    max-width: 70vh;
-    max-height: 70vh;
-    margin: 30px auto;
+	width: 75vw;
+	height: 75vw;
+	max-width: 70vh;
+	max-height: 70vh;
+	margin: 30px auto;
 }
 .qrResult {
-    font-size: 20px;
-    text-align: center;
-    width: 90%;
-    margin: auto;
+	font-size: 20px;
+	text-align: center;
+	width: 90%;
+	margin: 30px auto;
 }
 .qrgenetate {
-    width: 200px !important;
-    height: 200px !important;
-    display: block;
-    margin: 50px auto;
+	width: 200px !important;
+	height: 200px !important;
+	display: block;
+	margin: 50px auto;
 }
 .qr-gen-set-vlaue {
-    display: block;
-    height: 35vh;
-    width: 50vw;
-    margin: auto;
-    resize: none;
-    font-size: 2rem;
-    @media screen and (max-width: 500px) {
-        width: 80vw;
-    }
+	display: block;
+	height: 35vh;
+	width: 50vw;
+	margin: auto;
+	resize: none;
+	font-size: 2rem;
+	@media screen and (max-width: 500px) {
+		width: 80vw;
+	}
 }
 .qr-mode-btn {
-    position: fixed;
-    bottom: 5px;
-    right: -3px;
-    * {
-        margin: 15px;
-        text-decoration: none;
-        font-size: 16px;
-        color: black;
-    }
-    & > .active {
-        color: red;
-    }
+	position: fixed;
+	bottom: 5px;
+	right: -3px;
+	* {
+		margin: 15px;
+		text-decoration: none;
+		font-size: 16px;
+		color: black;
+	}
+	& > .active {
+		color: red;
+	}
 }
 .qr-gen-setting {
-    width: 80vw;
-    height: 80vh;
-    max-width: 80vh;
-    max-height: 80vw;
-    background: white;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & > .qrgenetate {
-        width: 80% !important;
-        height: 80% !important;
-    }
-    & > .setqrsize {
-        height: 50px;
-        position: fixed;
-        bottom: 0;
-        margin: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-        &:hover {
-            * {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-        input:focus {
-            & {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-        * {
-            margin: 0 10px;
-            width: 30px;
-            height: 30px;
-            font-size: 2.4rem;
-            font-weight: bold;
-            visibility: hidden;
-            opacity: 0;
-            transition: .3s;
-        }
-        button {
-            background: white;
-            outline: none;
-            border: 1px solid black;
-            &:focus {
-                outline: none;
-            }
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    }
+	width: 80vw;
+	height: 80vh;
+	max-width: 80vh;
+	max-height: 80vw;
+	background: white;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& > .qrgenetate {
+		width: 80% !important;
+		height: 80% !important;
+	}
+	& > .setqrsize {
+		height: 50px;
+		position: fixed;
+		bottom: 0;
+		margin: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		&:hover {
+			* {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		input:focus {
+			& {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		* {
+			margin: 0 10px;
+			width: 30px;
+			height: 30px;
+			font-size: 2.4rem;
+			font-weight: bold;
+			visibility: hidden;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		button {
+			background: white;
+			outline: none;
+			border: 1px solid black;
+			&:focus {
+				outline: none;
+			}
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		input[type='number'] {
+			-moz-appearance: textfield;
+		}
+	}
 }
