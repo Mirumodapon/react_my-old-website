@@ -1,4 +1,5 @@
 import { Switch, Route, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import SM from './features/SM';
 import Qr from './features/QR';
@@ -6,18 +7,17 @@ import Qr from './features/QR';
 import '../assets/scss/tools.scss';
 
 function ToolList() {
+	const toolslist = useSelector((store) => store.tools);
 	return (
 		<div className="toolslist">
 			<div className="container">
-				<Link to="/tools/sm">
-					<span>S</span>Screen Message
-				</Link>
-				<Link to="/tools/qr">
-					QR code Tools<span>Q</span>
-				</Link>
-				<Link to="/tools/ran">
-					<span>R</span>Random Generater
-				</Link>
+				{toolslist.map((x, index) => (
+					<Link key={index} to={`/tools${x.link}`}>
+						{index % 2 === 0 && <span>{x.label[0]}</span>}
+						{x.label}
+						{index % 2 === 1 && <span>{x.label[0]}</span>}
+					</Link>
+				))}
 			</div>
 		</div>
 	);
