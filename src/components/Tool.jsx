@@ -12,7 +12,7 @@ function ToolList() {
 		<div className="toolslist">
 			<div className="container">
 				{toolslist.map((x, index) => (
-					<Link key={index} to={`/tools${x.link}`}>
+					<Link key={index} to={`/tools/${x.link}`}>
 						{index % 2 === 0 && <span>{x.label[0]}</span>}
 						{x.label}
 						{index % 2 === 1 && <span>{x.label[0]}</span>}
