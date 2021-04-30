@@ -8,6 +8,13 @@
 		* {
 			display: block;
 			font-size: 3.2rem;
+			@media screen and (max-width: 700px) {
+				font-size: 2.4rem;
+			}
+			@media screen and (max-width: 400px) {
+				font-size: 2rem;
+			}
+
 			color: black;
 			text-decoration: none;
 			margin: 30px 0;
@@ -17,6 +24,10 @@
 				border-radius: 50%;
 				width: 50px;
 				height: 50px;
+				@media screen and (max-width: 400px) {
+					width: 35px;
+					height: 35px;
+				}
 				justify-content: center;
 				align-items: center;
 				margin: 20px;
@@ -27,6 +38,14 @@
 		}
 		*:nth-child(even) {
 			text-align: right;
+		}
+		@media screen and (max-width: 500px) {
+			*:nth-child(odd) {
+				text-align: center;
+			}
+			*:nth-child(even) {
+				text-align: center;
+			}
 		}
 	}
 }
