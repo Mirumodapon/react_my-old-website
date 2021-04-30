@@ -19,7 +19,7 @@ function Navbar() {
 	const isVisible = () => !(isMobile && !isActive);
 	const handleHamburger = (e) => setActive(e);
 	const handleNavItem = (e) => setActive(false);
-	const navItems = useSelector((state) => state.Navbar.options);
+	const navItems = useSelector((state) => state.navbar.options);
 	return (
 		<nav id="navbar">
 			<Hamburger

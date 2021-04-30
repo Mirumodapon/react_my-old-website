@@ -1,0 +1,32 @@
+{
+	"navbar": {
+		"options": [
+			{
+				"label": "Home",
+				"url": "/"
+			},
+			{
+				"label": "About",
+				"url": "/about"
+			},
+			{
+				"label": "Works",
+				"url": "/works"
+			},
+			{
+				"label": "Tools",
+				"url": "/tools"
+			}
+		]
+	},
+	"tools": [
+		{
+			"label": "Screen Message",
+			"link": "sm"
+		},
+		{
+			"label": "QR code Tools",
+			"link": "qr"
+		}
+	]
+}
