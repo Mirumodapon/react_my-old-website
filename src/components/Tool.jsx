@@ -5,6 +5,7 @@ import SM from './features/SM';
 import Qr from './features/QR';
 
 import '../assets/scss/tools.scss';
+import Random from './features/Random';
 
 function ToolList() {
 	const toolslist = useSelector((store) => store.tools);
@@ -29,6 +30,7 @@ function Tool() {
 			<Route path="/tools" component={ToolList} exact></Route>
 			<Route path="/tools/qr" component={Qr}></Route>
 			<Route path="/tools/sm" component={SM}></Route>
+			<Route path="/tools/ran" component={Random}></Route>
 		</Switch>
 	);
 }

@@ -1,0 +1,85 @@
+@import './public/course.scss';
+
+#random-number {
+    width: 99vw;
+    height: calc(100vh - 72px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    .config {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 45%;
+        height: 90%;
+        padding: 20px;
+        .generateConfig {
+            vertical-align: middle;
+            font-size: 2.4rem;
+            
+            input {
+                font-size: 2.4rem;
+                
+            }
+            .selectType {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                vertical-align:middle;
+                margin: 0 20px;
+            }
+        }
+        input[type=number] {
+            width: 75px;
+            margin: 0 20px;
+        }
+        input[type=text] {
+            width: 150px;
+            margin: 0 20px;
+        }
+        input[type=radio] {
+            width: 15px;
+            height: 15px;
+            margin: 0 10px;
+        }
+        .limit {
+            width: 100px !important;
+        }
+        .generateBtn {
+            font-size: 2.4rem;
+            margin: 0 auto;
+            border: 2px black solid;
+            border-radius: 20px;
+            padding: 5px;   
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                background: #c5c5c5;
+            }
+        }
+    }
+}
+
+.ran-mode-btn {
+	position: fixed;
+	bottom: 5px;
+	right: -3px;
+	* {
+		margin: 15px;
+		text-decoration: none;
+		font-size: 16px;
+		color: black;
+        background: transparent;
+        border: none;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+	}
+	& > .active {
+		color: red;
+	}
+}
