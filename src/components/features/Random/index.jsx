@@ -15,8 +15,8 @@ function RanNumber() {
             {mode === 'Number' && <RandomNumber />}
             {mode === 'String' && <RandomString />}
             <div className="ran-mode-btn">
-                <span onClick={handleModeButton} className={mode === 'String' ? 'active' : ''}>String</span>
                 <span onClick={handleModeButton} className={mode === 'Number' ? 'active' : ''}>Number</span>
+                <span onClick={handleModeButton} className={mode === 'String' ? 'active' : ''}>String</span>
             </div>
         </Fragment>
     );

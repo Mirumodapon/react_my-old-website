@@ -142,7 +142,11 @@ function RandomNumber() {
                     <h1>Result</h1>
                     <hr />
                     <div className="result">
-                        {result.map((x, index) => <span key={index}>{x}</span>)}
+                        {result.map((x, index) =>
+                            <span
+                                key={index}
+                                onClick={(e) => setResult(result.filter((x, i) => i !== index))}
+                            >{x}</span>)}
 
                     </div>
                     <p>{erro.map((x, index) => <Fragment key={index}><span className="error">{x}</span><br /></Fragment>)}</p>

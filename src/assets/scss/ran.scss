@@ -77,25 +77,6 @@
                 width: 75px !important;
             }
         }
-        .generateBtn {
-            font-size: 2.4rem;
-            @media screen and (max-width: 500px) {
-                font-size: 2rem;
-            }
-            @media screen and (max-width: 450px) {
-                font-size: 1.6rem;
-            }
-            margin: 0 auto;
-            border: 2px black solid;
-            border-radius: 20px;
-            padding: 5px;   
-            &:focus {
-                outline: none;
-            }
-            &:active {
-                background: #c5c5c5;
-            }
-        }
     }
     .random-number-result {
         width: 700px;
@@ -132,12 +113,16 @@
                 font-size: 2.4rem;
                 display: block;
             }
+            *:hover {
+                color: red;
+            }
         }
         p {
             font-size: 2rem;
             text-align: center;
             color:red;
             //line-height: 5.4rem;
+           
             .error {
                 display: block;
                 margin: 5px 0;
@@ -154,6 +139,77 @@
     }
 }
 
+#random-string {
+    width: 99vw;
+    height: calc(100vh - 72px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    .config {
+        display: flex;
+        // justify-content: space-around;
+        flex-direction: column;
+        width: 35%;
+        min-width: 480px;
+        font-size: 2.4rem;
+        @media screen and (max-width: 500px) {
+            padding: 20px;
+            min-width: 0;
+            width: 100%;
+            font-size: 2rem;
+        }
+        * {
+            margin: 5px 0;
+        }
+        button {
+            margin: 10px auto;
+            width: 50%;
+        }
+        input {
+            font-size: 2.4rem;
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+        }
+        input[type=number] {
+            width: 120px;
+        }
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+        }
+        #random-string-CS {
+            @media screen and (max-width: 500px) {
+                width: 50%;
+            }
+        }
+        .result {
+            padding: 20px 10px;
+            overflow-y:auto;
+        }
+    }
+}
+.generateBtn {
+    font-size: 2.4rem;
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 1.6rem;
+    }
+    margin: 0 auto;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 5px;   
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background: #c5c5c5;
+    }
+}
 .ran-mode-btn {
 	position: fixed;
 	bottom: 5px;
