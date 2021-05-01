@@ -12,15 +12,35 @@
         justify-content: space-around;
         flex-direction: column;
         width: 45%;
+        min-width: 480px;
+        @media screen and (max-width: 500px) {
+            min-width: 430px;
+        }
+        @media screen and (max-width: 450px) {
+            width: 97%;
+            min-width: 0;
+            padding: 0;
+        }
         height: 90%;
+        max-height: 450px;
         padding: 20px;
         .generateConfig {
             vertical-align: middle;
             font-size: 2.4rem;
-            
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 1.6rem;
+            }
             input {
                 font-size: 2.4rem;
-                
+                @media screen and (max-width: 500px) {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: 450px) {
+                    font-size: 1.6rem;
+                }
             }
             .selectType {
                 display: inline-flex;
@@ -34,6 +54,10 @@
         input[type=number] {
             width: 75px;
             margin: 0 20px;
+            @media screen and (max-width: 400px) {
+                width: 35px;
+                margin: 0 5px;
+            }
         }
         input[type=text] {
             width: 150px;
@@ -43,12 +67,24 @@
             width: 15px;
             height: 15px;
             margin: 0 10px;
+            @media screen and (max-width: 400px) {
+                margin: 0px 0;
+            }
         }
         .limit {
             width: 100px !important;
+            @media screen and (max-width: 400px) {
+                width: 75px !important;
+            }
         }
         .generateBtn {
             font-size: 2.4rem;
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 1.6rem;
+            }
             margin: 0 auto;
             border: 2px black solid;
             border-radius: 20px;
@@ -60,6 +96,61 @@
                 background: #c5c5c5;
             }
         }
+    }
+    .random-number-result {
+        width: 700px;
+        height: 500px;
+        @media screen and (max-width: 800px) {
+            width: 85%;
+        }
+        background: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 20px;
+        margin: auto;
+        h1 {
+            font-size: 3.2rem;
+            text-align: center;
+        }
+        hr {
+            border: 1px black solid;
+        }
+        .result {
+            max-width: 100vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 120px);
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+            * {
+                width: 100px;
+                height: 35px;
+                font-size: 2.4rem;
+                display: block;
+            }
+        }
+        p {
+            font-size: 2rem;
+            text-align: center;
+            color:red;
+            //line-height: 5.4rem;
+            .error {
+                display: block;
+                margin: 5px 0;
+            }
+            @media screen and (max-width: 800px) {
+                .error {
+                    font-size: 1.6rem;
+                }
+                padding: 20px;
+                text-align: left;
+            }
+        }
+
     }
 }
 
