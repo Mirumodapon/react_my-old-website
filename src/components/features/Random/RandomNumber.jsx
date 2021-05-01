@@ -11,7 +11,7 @@ function RandomNumber() {
     const [isRepeat, setRepeat] = useState(false);
     const [type, setType] = useState('int');
     const [except, setExcept] = useState('');
-    const [showPopup, setPopup] = useState(true);
+    const [showPopup, setPopup] = useState(false);
     const [result, setResult] = useState([]);
     const [erro, setError] = useState([]);
     const handleRepeat = (e) => {
