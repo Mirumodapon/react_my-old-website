@@ -8,10 +8,13 @@ function RandomNumber() {
         setCustom(e.target.checked);
     }
     const handleGenerate = (e) => {
-        const length = parseInt(document.getElementById('random-string-length').value);
-        const count = parseInt(document.getElementById('random-string-count').value);
-        const getRandom = (s) => random.string(length, s);
+        let length = parseInt(document.getElementById('random-string-length').value);
+        let count = parseInt(document.getElementById('random-string-count').value);
+        const getRandom = (s) => random.string(length, s === '' ? ' ' : s);
         const temp = []
+        if (isNaN(length)) length = 20;
+        if (isNaN(count)) count = 1;
+
         while (temp.length < count)
             if (custom) {
                 const cus = document.getElementById('random-string-CS').value;
@@ -21,6 +24,7 @@ function RandomNumber() {
                 const lower = document.getElementById('random-string-a').checked ? lowerCaseAlphabet : '';
                 const num = document.getElementById('random-string-0').checked ? number : '';
                 const sym = document.getElementById('random-string-S').checked ? symbol : '';
+
                 temp.push(getRandom(upper + lower + num + sym));
             }
         setResult(temp);
@@ -31,8 +35,8 @@ function RandomNumber() {
     return (
         <div id="random-string">
             <div className="config">
-                <section><label>Length: </label><input type="number" id="random-string-length" /></section>
-                <section><label>Count: </label><input type="number" id="random-string-count" /></section>
+                <section><label>Length: </label><input type="number" id="random-string-length" placeholder="20" /></section>
+                <section><label>Count: </label><input type="number" id="random-string-count" placeholder="1" /></section>
                 <section><input type="checkbox" id="random-string-A" disabled={custom} /><label>Uppercase(A~Z)</label></section>
                 <section><input type="checkbox" id="random-string-a" disabled={custom} /><label>Lowercase(a~z)</label></section>
                 <section><input type="checkbox" id="random-string-0" disabled={custom} /><label>Number(0~9)</label></section>
