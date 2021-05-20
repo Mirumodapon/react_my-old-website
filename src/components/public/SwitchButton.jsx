@@ -1,5 +1,3 @@
-import '../../assets/scss/public/switchbutton.scss';
-
 function SwitchButton({ callback, checked }) {
     const handleChange = (e) => e.target.checked;
     return (

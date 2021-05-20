@@ -2,7 +2,6 @@ import { useState, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Hamburger from '../public/Hamburger';
-import '../../assets/scss/navbar.scss';
 
 function Navbar() {
 	const [isMobile, setMobile] = useState(true);

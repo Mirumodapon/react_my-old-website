@@ -1,4 +1,3 @@
-import '../assets/scss/about.scss';
 import Icon from '../assets/images/Icon.jpg';
 
 function About() {

@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import useQuery from '../../hook/useQuery';
-import '../../assets/scss/SM.scss';
 
 import Popup from '../public/Popup';
 

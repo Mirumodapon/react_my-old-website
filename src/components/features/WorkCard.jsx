@@ -1,5 +1,3 @@
-import '../../assets/scss/public/workcard.scss';
-
 function WorkCard(props) {
 	const work = props.data;
 	return (

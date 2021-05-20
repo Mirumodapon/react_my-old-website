@@ -2,7 +2,6 @@ import { Fragment, useState } from 'react';
 
 import QrScanner from './QrScanner';
 import QrGenerate from './QrGenerate';
-import '../../../assets/scss/qr.scss';
 
 function Qr() {
 	const [mode, setMode] = useState(null);

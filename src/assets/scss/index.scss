@@ -1,5 +1,6 @@
 @import './public/font.scss';
 @import './public/course.scss';
+
 html {
     font-size: 62.5%;
 }
@@ -14,3 +15,19 @@ body {
 a {
     @include pointer;
 }
+
+@import './about.scss';
+@import './header.scss';
+@import './home.scss';
+@import './navbar.scss';
+@import './qr.scss';
+@import './ran.scss';
+@import './SM.scss';
+@import './tools.scss';
+@import './works.scss';
+
+@import './public/popup.scss';
+@import './public/workcard.scss';
+@import './public/switchbutton.scss';
+@import './public/popup.scss';
+@import './public/hamburger.scss';

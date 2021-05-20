@@ -1,5 +1,5 @@
 import Icon from '../assets/images/Icon.jpg';
-import '../assets/scss/home.scss';
+
 function Home() {
 	return (
 		<main id="home">

@@ -1,5 +1,4 @@
 import { useState, useEffect, Fragment } from 'react';
-import '../../assets/scss/public/hamburger.scss';
 
 function Hamburger(props) {
 	const [active, setactive] = useState(false);

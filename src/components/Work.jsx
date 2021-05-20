@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import WorkCard from './features/WorkCard';
-import '../assets/scss/works.scss';
+
 function Work() {
 	const [works, setWorks] = useState([]);
 	useEffect(() => {

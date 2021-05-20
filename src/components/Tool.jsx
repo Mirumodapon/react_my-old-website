@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import SM from './features/SM';
 import Qr from './features/QR';
 
-import '../assets/scss/tools.scss';
 import Random from './features/Random';
 
 function ToolList() {
