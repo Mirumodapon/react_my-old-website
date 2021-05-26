@@ -12,7 +12,6 @@
 	margin: 30px auto;
 	word-spacing: pre;
 	overflow-wrap: break-word;
-
 }
 .qrgenetate {
 	width: 200px !important;
@@ -111,5 +110,32 @@
 		input[type='number'] {
 			-moz-appearance: textfield;
 		}
+	}
+}
+
+.qr-feature {
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	z-index: 5;
+	& > * {
+		text-decoration: none;
+		color: #31708f;
+		background: #d9eff7;
+		border: 1px solid #bce8f1;
+		border-radius: 0 10px 10px 0;
+		position: relative;
+		right: 200px;
+		margin: 10px 0;
+		width: 125px;
+		font-size: 2rem;
+		padding: 10px 15px;
+		transition: right 0.5s ease-out 0.5s;
+		display: block;
+		text-align: center;
+	}
+	.qr-feature-show {
+		right: 2px;
 	}
 }
