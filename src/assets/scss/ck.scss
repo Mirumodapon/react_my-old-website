@@ -1,0 +1,72 @@
+#Ck {
+	width: 100vw;
+	height: calc(100vh - 72px);
+	margin: auto;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	.clock {
+		width: 80%;
+		height: calc(100vh - 75px);
+		margin: 0 auto;
+		& > ul {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			li {
+				list-style-type: none;
+				display: block;
+				margin: 20px;
+				width: 300px;
+				& > h2 {
+					font-size: 2.4rem;
+					@include pointer;
+				}
+				& > time {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	.ck-mode-btn {
+		position: fixed;
+		bottom: 5px;
+		right: 20px;
+		* {
+			margin: 15px;
+			text-decoration: none;
+			font-size: 16px;
+			color: black;
+		}
+		& > .active {
+			color: red;
+		}
+	}
+	.ck-popup {
+		width: 80vw;
+		height: 250px;
+		background: white;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		div > * {
+			margin: 20px;
+		}
+		div > span {
+			font-size: 3.2rem;
+			display: block;
+		}
+		div > time {
+			font-size: 4.2rem;
+			font-weight: bold;
+		}
+	}
+}

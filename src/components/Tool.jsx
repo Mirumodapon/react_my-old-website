@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import SM from './features/SM';
 import Qr from './features/QR';
-
+import Ck from './features/Clock';
 import Random from './features/Random';
 
 function ToolList() {
@@ -30,6 +30,7 @@ function Tool() {
 			<Route path="/tools/qr" component={Qr}></Route>
 			<Route path="/tools/sm" component={SM}></Route>
 			<Route path="/tools/ran" component={Random}></Route>
+			<Route path="/tools/ck" component={Ck}></Route>
 		</Switch>
 	);
 }
