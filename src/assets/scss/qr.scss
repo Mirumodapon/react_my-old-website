@@ -139,3 +139,17 @@
 		right: 2px;
 	}
 }
+
+.qr-copy-hint {
+	width: 180px;
+	text-align: center;
+	background: #969696;
+	padding: 10px;
+	border-radius: 20px;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 20px;
+	transition: opacity 0.3s ease-out 0.3s;
+}

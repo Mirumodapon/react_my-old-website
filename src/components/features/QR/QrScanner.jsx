@@ -6,6 +6,7 @@ function QrScanner() {
 	const [data, setData] = useState('No Result');
 	const [isLink, setIsLink] = useState(false);
 	const [showScanner, setShowScanner] = useState(true);
+	const [copyHintStyle, setCopyHintStyle] = useState({ opacity: 0 });
 	const copyfield = useRef();
 	const handleError = (e) => {
 		setShowScanner(false);
@@ -24,6 +25,8 @@ function QrScanner() {
 		copy.select();
 		document.execCommand('copy');
 		copy.style.display = 'none';
+		setCopyHintStyle({ opacity: 1 });
+		setTimeout(() => setCopyHintStyle({ opacity: 0 }), 3000);
 	};
 	return (
 		<Fragment>
@@ -48,6 +51,9 @@ function QrScanner() {
 				</a>
 			</div>
 			<input ref={copyfield} value={data} style={{ display: 'none' }} />
+			<span className="qr-copy-hint" style={copyHintStyle}>
+				The text has been copied.
+			</span>
 		</Fragment>
 	);
 }
