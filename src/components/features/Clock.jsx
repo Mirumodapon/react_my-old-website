@@ -47,7 +47,7 @@ function Clock() {
 					{timezone.map((zone, index) => (
 						<li key={index}>
 							<h2 onClick={(e) => handleZoneClick(zone)}>
-								{zone.split('/')[1] || zone}
+								{zone.split('/').reverse()[0] || zone}
 							</h2>
 							<time>
 								{moment(time)
